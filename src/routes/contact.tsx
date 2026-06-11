@@ -323,7 +323,7 @@ function SelectField({
   label: string;
   name: string;
   value: string;
-  onChange: any;
+  onChange: React.ChangeEventHandler<HTMLSelectElement>;
   options: string[];
   error?: string;
 }) {
