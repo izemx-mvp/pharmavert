@@ -47,7 +47,11 @@ function Home() {
       {/* HERO */}
       <section
         className="relative min-h-[100vh] flex items-center text-white overflow-hidden"
-        style={{ backgroundImage: `url(${heroBg})`, backgroundSize: "cover", backgroundPosition: "center" }}
+        style={{
+          backgroundImage: `url(${heroBg})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
       >
         <div className="absolute inset-0" style={{ background: "rgba(10,40,15,0.72)" }} />
         <div
@@ -88,11 +92,13 @@ function Home() {
           </Reveal>
           <Reveal delay={0.2}>
             <div className="flex flex-wrap gap-x-7 gap-y-3 text-sm text-white/90">
-              {["Marques Propres", "Réseau Professionnel National", "4 Produits Phares"].map((t) => (
-                <span key={t} className="inline-flex items-center gap-2">
-                  <CheckCircle2 size={18} className="text-accent" /> {t}
-                </span>
-              ))}
+              {["Marques Propres", "Réseau Professionnel National", "4 Produits Phares"].map(
+                (t) => (
+                  <span key={t} className="inline-flex items-center gap-2">
+                    <CheckCircle2 size={18} className="text-accent" /> {t}
+                  </span>
+                ),
+              )}
             </div>
           </Reveal>
         </div>
@@ -140,7 +146,12 @@ function Home() {
                 >
                   <div className="grid sm:grid-cols-[200px_1fr] gap-4 p-5 items-center">
                     <div className="aspect-square bg-white rounded-lg p-3 flex items-center justify-center">
-                      <img src={p.image} alt={p.name} className="max-h-full max-w-full object-contain" loading="lazy" />
+                      <img
+                        src={p.image}
+                        alt={p.name}
+                        className="max-h-full max-w-full object-contain"
+                        loading="lazy"
+                      />
                     </div>
                     <div className="min-w-0">
                       <h3 className="text-xl font-extrabold mb-1">{p.name}</h3>
@@ -182,16 +193,35 @@ function Home() {
               développe et promeut ses propres marques, alliant innovation, qualité et proximité
               avec le marché marocain.
             </p>
-            <Link to="/societe" className="text-primary font-bold inline-flex items-center gap-2 hover:gap-3 transition-all">
+            <Link
+              to="/societe"
+              className="text-primary font-bold inline-flex items-center gap-2 hover:gap-3 transition-all"
+            >
               En savoir plus sur Pharmavert <ArrowRight size={18} />
             </Link>
           </Reveal>
           <div className="grid sm:grid-cols-2 gap-5">
             {[
-              { icon: Package, t: "Marques Propres", d: "Des produits développés et promus sous les marques Pharmavert" },
-              { icon: Users, t: "Réseau Professionnel", d: "Pharmacies, grossistes, médecins, distributeurs et partenaires" },
-              { icon: Leaf, t: "Formules Naturelles", d: "Bioactifs naturels rigoureusement sélectionnés" },
-              { icon: Award, t: "Efficacité Prouvée", d: "Des produits recommandés par les professionnels de santé" },
+              {
+                icon: Package,
+                t: "Marques Propres",
+                d: "Des produits développés et promus sous les marques Pharmavert",
+              },
+              {
+                icon: Users,
+                t: "Réseau Professionnel",
+                d: "Pharmacies, grossistes, médecins, distributeurs et partenaires",
+              },
+              {
+                icon: Leaf,
+                t: "Formules Naturelles",
+                d: "Bioactifs naturels rigoureusement sélectionnés",
+              },
+              {
+                icon: Award,
+                t: "Efficacité Prouvée",
+                d: "Des produits recommandés par les professionnels de santé",
+              },
             ].map((b, i) => (
               <Reveal key={b.t} delay={i * 0.05}>
                 <div className="bg-white p-6 rounded-xl border-t-[3px] border-primary h-full shadow-sm hover:shadow-md transition">
@@ -219,10 +249,26 @@ function Home() {
           />
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: Store, t: "Pharmacies", d: "Distribution en officine de nos gammes alimentaires et cosmétiques" },
-              { icon: Truck, t: "Grossistes", d: "Distribution à grande échelle sur tout le territoire marocain" },
-              { icon: Stethoscope, t: "Médecins", d: "Prescription et recommandation par les professionnels de santé" },
-              { icon: Handshake, t: "Distributeurs", d: "Partenaires distributeurs pour une couverture nationale" },
+              {
+                icon: Store,
+                t: "Pharmacies",
+                d: "Distribution en officine de nos gammes alimentaires et cosmétiques",
+              },
+              {
+                icon: Truck,
+                t: "Grossistes",
+                d: "Distribution à grande échelle sur tout le territoire marocain",
+              },
+              {
+                icon: Stethoscope,
+                t: "Médecins",
+                d: "Prescription et recommandation par les professionnels de santé",
+              },
+              {
+                icon: Handshake,
+                t: "Distributeurs",
+                d: "Partenaires distributeurs pour une couverture nationale",
+              },
             ].map((c, i) => (
               <Reveal key={c.t} delay={i * 0.05}>
                 <div className="bg-white/[0.08] backdrop-blur border border-white/15 rounded-xl p-7 h-full flex flex-col">
@@ -245,9 +291,21 @@ function Home() {
           <SectionHeader eyebrow="Engagement" title="Notre Engagement" />
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { icon: Award, t: "Qualité Garantie", d: "Des formulations rigoureuses conformes aux standards du marché marocain et international" },
-              { icon: Network, t: "Distribution Professionnelle", d: "Un réseau étendu de pharmacies, grossistes et médecins partenaires" },
-              { icon: TrendingUp, t: "Innovation Continue", d: "Des marques propres en développement constant pour répondre aux besoins du marché" },
+              {
+                icon: Award,
+                t: "Qualité Garantie",
+                d: "Des formulations rigoureuses conformes aux standards du marché marocain et international",
+              },
+              {
+                icon: Network,
+                t: "Distribution Professionnelle",
+                d: "Un réseau étendu de pharmacies, grossistes et médecins partenaires",
+              },
+              {
+                icon: TrendingUp,
+                t: "Innovation Continue",
+                d: "Des marques propres en développement constant pour répondre aux besoins du marché",
+              },
             ].map((b, i) => (
               <Reveal key={b.t} delay={i * 0.05}>
                 <div className="bg-white p-7 rounded-xl border-t-[3px] border-primary h-full">
