@@ -31,7 +31,9 @@ export function Header() {
       <div className="pv-container flex items-center justify-between h-[72px]">
         <Link to="/" className="flex items-center gap-2 shrink-0" onClick={() => setOpen(false)}>
           <img src={logo} alt="Pharmavert" className="h-11 w-auto" />
-          <span className="font-extrabold text-xl tracking-tight text-primary hidden sm:inline">Pharmavert</span>
+          <span className="font-extrabold text-xl tracking-tight text-primary hidden sm:inline">
+            Pharmavert
+          </span>
         </Link>
 
         <nav className="hidden lg:flex items-center gap-8">
@@ -53,7 +55,11 @@ export function Header() {
           </Link>
         </div>
 
-        <button aria-label="Menu" className="lg:hidden p-2 text-primary" onClick={() => setOpen((v) => !v)}>
+        <button
+          aria-label="Menu"
+          className="lg:hidden p-2 text-primary"
+          onClick={() => setOpen((v) => !v)}
+        >
           {open ? <X size={26} /> : <Menu size={26} />}
         </button>
       </div>
@@ -72,7 +78,11 @@ export function Header() {
                 {n.label}
               </Link>
             ))}
-            <Link to="/contact" onClick={() => setOpen(false)} className="btn-primary btn-primary-hover mt-3">
+            <Link
+              to="/contact"
+              onClick={() => setOpen(false)}
+              className="btn-primary btn-primary-hover mt-3"
+            >
               Devenir Partenaire
             </Link>
           </div>
