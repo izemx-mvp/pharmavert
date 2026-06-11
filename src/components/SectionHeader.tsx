@@ -14,7 +14,9 @@ export function SectionHeader({
   align?: "center" | "left";
 }) {
   return (
-    <Reveal className={align === "center" ? "text-center max-w-3xl mx-auto mb-12" : "max-w-3xl mb-12"}>
+    <Reveal
+      className={align === "center" ? "text-center max-w-3xl mx-auto mb-12" : "max-w-3xl mb-12"}
+    >
       {eyebrow && (
         <div
           className={`inline-block text-xs font-bold tracking-[0.18em] uppercase px-3 py-1 rounded-full mb-4 ${

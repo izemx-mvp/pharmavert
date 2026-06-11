@@ -62,16 +62,24 @@ export const products: Product[] = [
     category: "Complément Alimentaire",
     description:
       "Nobal est un complexe bioactif unique associant Charbon Activé, Extrait Sec de Fenouil et Extrait Sec de Carvi pour combattre efficacement les ballonnements, gaz et inconforts digestifs. Une formule 100% naturelle pour une digestion légère au quotidien.",
-    benefits: [
-      "Ventre plus plat",
-      "Digestion plus légère",
-      "Meilleur confort au quotidien",
-    ],
+    benefits: ["Ventre plus plat", "Digestion plus légère", "Meilleur confort au quotidien"],
     ingredients: ["Charbon Activé", "Fenouil", "Carvi"],
     composition: [
-      { name: "Charbon Activé", dosage: "180mg", action: "Absorbe les gaz intestinaux · Aide à réduire les ballonnements" },
-      { name: "E.S de Fenouil", dosage: "60mg", action: "Favorise la digestion · Apaise les spasmes intestinaux" },
-      { name: "E.S de Carvi", dosage: "60mg", action: "Soutient la fonction digestive · Limite la formation des gaz" },
+      {
+        name: "Charbon Activé",
+        dosage: "180mg",
+        action: "Absorbe les gaz intestinaux · Aide à réduire les ballonnements",
+      },
+      {
+        name: "E.S de Fenouil",
+        dosage: "60mg",
+        action: "Favorise la digestion · Apaise les spasmes intestinaux",
+      },
+      {
+        name: "E.S de Carvi",
+        dosage: "60mg",
+        action: "Soutient la fonction digestive · Limite la formation des gaz",
+      },
     ],
   },
   {
