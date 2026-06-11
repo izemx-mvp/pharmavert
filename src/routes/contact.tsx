@@ -288,7 +288,7 @@ function Field({
   label: string;
   name: string;
   value: string;
-  onChange: any;
+  onChange: React.ChangeEventHandler<HTMLInputElement>;
   error?: string;
   type?: string;
 }) {
