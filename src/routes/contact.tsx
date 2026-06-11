@@ -244,7 +244,7 @@ function ContactItem({
   href,
   external,
 }: {
-  icon: any;
+  icon: React.ComponentType<{ size?: number }>;
   title: string;
   value: string;
   href?: string;
