@@ -17,7 +17,7 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
           <FooterCol title="Navigation">
             <FooterLink to="/">Accueil</FooterLink>
-            <FooterLink to="/societe">Société</FooterLink>
+            <FooterLink to="/societe">À propos</FooterLink>
             <FooterLink to="/produits">Produits</FooterLink>
             <FooterLink to="/partenaires">Partenaires</FooterLink>
             <FooterLink to="/contact">Contact</FooterLink>
@@ -35,9 +35,20 @@ export function Footer() {
             <span className="text-muted-foreground">Distributeurs</span>
           </FooterCol>
           <FooterCol title="Contact">
-            <span className="text-muted-foreground flex items-center gap-2"><Mail size={16}/> contact@pharmavert.ma</span>
-            <a href="https://www.instagram.com/pharmavert/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary flex items-center gap-2"><Instagram size={16}/> @pharmavert</a>
-            <span className="text-muted-foreground flex items-center gap-2"><MapPin size={16}/> Maroc</span>
+            <span className="text-muted-foreground flex items-center gap-2">
+              <Mail size={16} /> contact@pharmavert.ma
+            </span>
+            <a
+              href="https://www.instagram.com/pharmavert/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary flex items-center gap-2"
+            >
+              <Instagram size={16} /> @pharmavert
+            </a>
+            <span className="text-muted-foreground flex items-center gap-2">
+              <MapPin size={16} /> Maroc
+            </span>
           </FooterCol>
         </div>
 
